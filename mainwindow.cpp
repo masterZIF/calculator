@@ -268,7 +268,9 @@ MainWindow::MainWindow(QWidget *parent) :
         "min-height: 38px; "
         "border: 2px solid #ccc; "
         "border-radius: 4px; "
-        "background-color: white; "
+        "background-color: rgba(255,255,255,220); "
+        "color: black; "
+        "font-weight: bold; "
         "}"
         "QToolButton:hover, QPushButton:hover { "
         "background-color: #e0e0e0; "
@@ -278,22 +280,22 @@ MainWindow::MainWindow(QWidget *parent) :
         "border: 1px solid #ccc; "
         "border-radius: 4px; "
         "padding: 4px; "
+        "background-color: rgba(255,255,255,230); "
+        "color: black; "
         "}"
         "QPlainTextEdit { "
         "min-height: 60px; "
         "}"
         "QToolButton[text='('], QToolButton[text=')'] { "
         "background-color: #f0f0f0; "
+        "color: black; "
         "font-weight: bold; "
         "}"
-        "QToolButton[text='('], QToolButton[text=')'] { "
-            "background-color: #f0f0f0; "
-            "font-weight: bold; "
-            "}"
-            "QToolButton[text='⌫'] { "  // 退格按钮特殊样式
-            "background-color: #ffecec; "
-            "}"
-    );
+        "QToolButton[text='⌫'] { "
+        "background-color: #ffecec; "
+        "color: black; "
+        "}"
+        );
 }
 // 切换到矩阵模式
 void MainWindow::switchToMatrixMode() {
